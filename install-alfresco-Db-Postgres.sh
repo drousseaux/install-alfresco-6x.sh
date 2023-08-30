@@ -112,10 +112,12 @@ cat > web-server/shared/classes/alfresco-global.properties <<END
 dir.root=$PWD/alf_data
 dir.keystore=\${dir.root}/keystore
 
-db.driver=org.gjt.mm.mysql.Driver
-db.url=jdbc:mysql://localhost/alf620ce?useUnicode=yes&characterEncoding=UTF-8
 db.username=alfresco
 db.password=alfresco
+
+db.driver=org.postgresql.Driver
+db.url=jdbc:postgresql://localhost:5432/alfresco
+
 
 jodconverter.officeHome=/Applications/LibreOffice.app/Contents
 jodconverter.portNumbers=8101
